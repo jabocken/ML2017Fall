@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Image Classification for cdiscount.com</title>
+    <link>/</link>
+    <description>Recent content on Image Classification for cdiscount.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dataset</title>
+      <link>/docs/dataset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/dataset/</guid>
+      <description>This page describes the dataset provided by cdiscount.com and the steps we took to strip down the dataset to better accomodate our limited hardware resources.
+Raw Data and Categories: Data The datasets were provided in BSON (Binary JSON) format. The training data consisted of a list of 7,069,896 dictionaries each representing a product. Each product consisted of a product identifier product_id, category identifier category_id and a list of about 1-4 images.</description>
+    </item>
+    
+    <item>
+      <title>Evaluation</title>
+      <link>/docs/evaluation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/evaluation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Overview of Models</title>
+      <link>/docs/models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/models/</guid>
+      <description> InceptionV3 InceptionResnetV2 Xception </description>
+    </item>
+    
+    <item>
+      <title>Tensorboard</title>
+      <link>/docs/tensorboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tensorboard/</guid>
+      <description>Click here for the full site.</description>
+    </item>
+    
+  </channel>
+</rss>
