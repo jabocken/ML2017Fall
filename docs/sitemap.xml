@@ -3,6 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/docs/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>/docs/models/</loc>
+  </url>
+  
+  <url>
     <loc>/docs/dataset/</loc>
   </url>
   
@@ -11,7 +19,7 @@
   </url>
   
   <url>
-    <loc>/docs/models/</loc>
+    <loc>/docs/system/</loc>
   </url>
   
   <url>

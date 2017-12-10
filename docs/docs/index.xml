@@ -11,6 +11,27 @@
     
     
     <item>
+      <title>Project Overview</title>
+      <link>/docs/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/overview/</guid>
+      <description>Objective The objective of the project is to build an image classifier for the cdiscount.com&amp;rsquo;s dataset.
+Introduction For this project, we took up a Kaggle competition to build a product classifier for cdiscount.com, an online non-food shopping website based in France. cdiscount.com has provided a dataset containing images for over 7M products and their categories. The challenge is to build a machine learning-based solution that learns from the dataset and makes predictions on test images.</description>
+    </item>
+    
+    <item>
+      <title>Overview of Models</title>
+      <link>/docs/models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/models/</guid>
+      <description>InceptionV3 The “Inception” micro-architecture was first introduced by Szegedy et al. in their 2014 paper, Going Deeper with Convolutions:
+The original incarnation of this architecture was called GoogLeNet, but subsequent manifestations have simply been called Inception vN where N refers to the version number put out by Google.
+The Inception V3 architecture included in the Keras core comes from the later publication by Szegedy et al., Rethinking the Inception Architecture for Computer Vision (2015) which proposes updates to the inception module to further boost ImageNet classification accuracy.</description>
+    </item>
+    
+    <item>
       <title>Dataset</title>
       <link>/docs/dataset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -30,12 +51,14 @@ Raw Data and Categories: Data The datasets were provided in BSON (Binary JSON) f
     </item>
     
     <item>
-      <title>Overview of Models</title>
-      <link>/docs/models/</link>
+      <title>Hardware Specification</title>
+      <link>/docs/system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/models/</guid>
-      <description> InceptionV3 InceptionResnetV2 Xception </description>
+      <guid>/docs/system/</guid>
+      <description>Intel Haswell i7 8-Core
+NVidia GTX 970
+16GB Memory</description>
     </item>
     
     <item>

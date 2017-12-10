@@ -114,7 +114,7 @@
 
 <h4 id="data">Data</h4>
 
-<p>The datasets were provided in BSON (Binary JSON) format. The training data consisted of a list of 7,069,896 dictionaries each representing a product. Each product consisted of a product identifier <code>product_id</code>, category identifier <code>category_id</code> and a list of about 1-4 images. A test dataset consisting of 1,768,182 products were also provided. However, it lacked the category identifier <code>category_id</code> that was required to validate the accuracy of our methods. Therefore, we disregarded the test dataset and instead used a split of the training dataset for validation purposes.</p>
+<p>The datasets were provided in BSON (Binary JSON) format. The training data consisted of a list of 7,069,896 dictionaries each representing a product. Each product consisted of a product identifier <code>product_id</code>, category identifier <code>category_id</code> and a list of about 1-4 images. A test dataset consisting of 1,768,182 products were also provided. However, it lacked the category identifier <code>category_id</code> that was required to validate the accuracy of our methods. Therefore, we disregarded the test dataset and instead used a split of the training dataset for validation purposes. In addition, we noticed that only one among the provided images per product represented the face of the product, while others showed different sides (when provided). We only considered the first image for training and prediction, and disregarded the rest as they may induce errors.</p>
 
 <h4 id="categories">Categories:</h4>
 
