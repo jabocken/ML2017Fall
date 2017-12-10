@@ -1,0 +1,17 @@
+relativeURLs = true
+languageCode = "en-us"
+title = "Image Classification for cdiscount.com"
+theme = "kube"
+paginate = 4
+publishDir = "../docs"
+[Params]
+  RSSLink = "/index.xml"
+  author = "Balaji Arun; Joshua Bockenek; Abhishek Chauhan; Jamal Ahmad Khan"
+  github = "" # add your github profile name
+  twitter = "" # add your twitter profile
+  email = "myemail@myaddress.xxx"
+
+[[menu.main]]
+    name = "Docs"
+    weight = -100
+    url = "/docs/"
