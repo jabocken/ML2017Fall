@@ -118,7 +118,24 @@
 
 <h2 id="problem-reduction">Problem Reduction</h2>
 
-<p>Each product image belongs to a tuple of three categories, representing an categorial hierarchy. However, we had significant limitations in hardware resources.</p>
+<p>Each product image belongs to a tuple of three categories, representing an categorial hierarchy. However, we had significant limitations in <a href="../../docs/system/">hardware resources</a>. Therefore, we categorized the images only among the top-level category.</p>
+
+<h2 id="process">Process</h2>
+
+<p>We used Keras and its built-in models with pre-trained weights to effectively train our new model. We re-trained the last two layers of the of the existing models with our dataset. More information on the models are available in the <a href="../../docs/models/">Models page</a>.</p>
+
+<p>Add more here.. Abhishek knows more?</p>
+
+<h2 id="training">Training</h2>
+
+<p>We initially experimented with different <a href="../../docs/dataset/">datasets</a> before arriving to our final choice. We named our datasets DS<sub>A</sub>, DS<sub>B</sub>, and DS<sub>C</sub> as explained <a href="../../docs/dataset/">here</a>.</p>
+
+<p>We achieved very high training as well as test accuracy of X and Y, respectively, with the DS<sub>A</sub> dataset, when we used the InceptionV3 model to train on our dataset. However, the dataset only represented a tiny fraction of the data, and our hardware resources were still not saturated.</p>
+
+<p>Next, we produced the DS<sub>B</sub> dataset and trained our models. The accuracies were&hellip; We quickly realized that the lack of data could be the reason for such low accuracies. Therefore, we produced similar dataset with more images (DS<sub>C</sub>). This dataset by far yielded the best results for InceptionV3. Therefore, we used the same dataset for two other models as well. The results are avaialble in the <a href="../../docs/tensorboard/">tensorboard</a> page.</p>
+
+<p>underfit
+overfit?</p>
 
 
     
