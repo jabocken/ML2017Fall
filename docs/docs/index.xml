@@ -27,8 +27,8 @@ Introduction For this project, we took up a Kaggle competition to build a produc
       
       <guid>/docs/models/</guid>
       <description>InceptionV3 The “Inception” micro-architecture was first introduced by Szegedy et al. in their 2014 paper, Going Deeper with Convolutions:
-The original incarnation of this architecture was called GoogLeNet, but subsequent manifestations have simply been called Inception vN where N refers to the version number put out by Google.
-The Inception V3 architecture included in the Keras core comes from the later publication by Szegedy et al., Rethinking the Inception Architecture for Computer Vision (2015) which proposes updates to the inception module to further boost ImageNet classification accuracy.</description>
+ The original Inception module used in GoogLeNet.   The original incarnation of this architecture was called GoogLeNet, but subsequent manifestations have simply been called Inception vN where N refers to the version number put out by Google.
+The Inception V3 architecture included in the Keras core comes from the later publication by Szegedy et al.</description>
     </item>
     
     <item>
@@ -42,23 +42,12 @@ Raw Data and Categories: Data The datasets were provided in BSON (Binary JSON) f
     </item>
     
     <item>
-      <title>Evaluation</title>
-      <link>/docs/evaluation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/evaluation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Hardware Specification</title>
       <link>/docs/system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/system/</guid>
-      <description>Intel Haswell i7 8-Core
-NVidia GTX 970
-16GB Memory</description>
+      <description> Intel&amp;reg; Core&amp;trade; i7-4770 CPU @ 3.40GHz (8-core) 16GB RAM NVidia GTX 970 </description>
     </item>
     
     <item>
