@@ -12,7 +12,16 @@ This page describes the dataset provided by cdiscount.com and the steps we took 
 ## Raw Data and Categories:
 
 #### Data
-The datasets were provided in BSON (Binary JSON) format. The training data consisted of a list of 7,069,896 dictionaries each representing a product. Each product consisted of a product identifier `product_id`, category identifier `category_id` and a list of about 1-4 images. A test dataset consisting of 1,768,182 products were also provided. However, it lacked the category identifier `category_id` that was required to validate the accuracy of our methods. Therefore, we disregarded the test dataset and instead used a split of the training dataset for validation purposes. In addition, we noticed that only one among the provided images per product represented the face of the product, while others showed different sides (when provided). We only considered the first image for training and prediction, and disregarded the rest as they may induce errors. 
+The datasets were provided in BSON (Binary JSON) format. The training data consisted of a list of 7,069,896 dictionaries each representing a product. Each product consisted of a product identifier `product_id`, category identifier `category_id` and a list of about 1-4 images. A test dataset consisting of 1,768,182 products were also provided. However, it lacked the category identifier `category_id` that was required to validate the accuracy of our methods. Therefore, we disregarded the test dataset and instead used a split of the training dataset for validation purposes. 
+
+**Multiple images of the same product:**
+
+We noticed that only one among the provided images per product represented the face of the product, while others showed different sides (when provided). We only considered the first image for training and prediction, and disregarded the rest as they may induce errors. An example product and its multiple images are shown below.
+
+![1](/img/33492-0.jpg)
+![2](/img/33492-1.jpg)
+![3](/img/33492-2.jpg)
+![4](/img/33492-3.jpg)
 
 #### Categories:
 

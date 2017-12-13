@@ -7,8 +7,8 @@ bref = ""
 toc = false
 +++
 
-Intel Haswell i7 8-Core
+#### Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz (8-core)
+#### 16GB RAM
+#### NVidia GTX 970
 
-NVidia GTX 970
 
-16GB Memory

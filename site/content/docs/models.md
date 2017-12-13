@@ -11,25 +11,24 @@ toc = false
 
 The “Inception” micro-architecture was first introduced by Szegedy et al. in their 2014 paper, Going Deeper with Convolutions:
 
+{{< figure src="/img/imagenet_inception_module.png" title="The original Inception module used in GoogLeNet." >}}
+
 The original incarnation of this architecture was called GoogLeNet, but subsequent manifestations have simply been called Inception vN where N refers to the version number put out by Google.
 
 The Inception V3 architecture included in the Keras core comes from the later publication by Szegedy et al., Rethinking the Inception Architecture for Computer Vision (2015) which proposes updates to the inception module to further boost ImageNet classification accuracy.
 
-The weights for Inception V3 are smaller than both VGG and ResNet, coming in at 96MB.
+In the paper Rethinking the Inception Architecture for Computer Vision, the authors proposed Inception-v2 and Inception-v3. In the Inception-v2, they introduced Factorization(factorize convolutions into smaller convolutions) and some minor change into Inception-v1. Note that we have factorized the traditional 7x7 convolution into three 3x3 convolutions. As for Inception-v3, it is a variant of Inception-v2 which adds BN-auxiliary. BN auxiliary refers to the version in which the fully connected layer of the auxiliary classifier is also-normalized, not just convolutions. We are refering to the model [Inception-v2 + BN auxiliary] as Inception-v3.
+
+{{< figure src="/img/imagenet_inceptionv3_module.png" title="Inception V3" >}}
+
+
+The weights for Inception V3 amount to 96MB.
 
 ## InceptionResnetV2
 
-Unlike traditional sequential network architectures such as AlexNet, OverFeat, and VGG, ResNet is instead a form of “exotic architecture” that relies on micro-architecture modules (also called “network-in-network architectures”).
+Inception-ResNet-v2 is a variation of Inception V3 model, and it is considerably deeper than the previous Inception V3. Below in the figure is an easier to read version of the same network where the repeated residual blocks have been compressed. Here, notice that the inception blocks have been simplified, containing fewer parallel towers than the previous Inception V3. The Inception-ResNet-v2 architecture is more accurate than previous state of the art models.
 
-The term micro-architecture refers to the set of “building blocks” used to construct the network. A collection of micro-architecture building blocks (along with your standard CONV, POOL, etc. layers) leads to the macro-architecture (i.e,. the end network itself).
-
-First introduced by He et al. in their 2015 paper, Deep Residual Learning for Image Recognition, the ResNet architecture has become a seminal work, demonstrating that extremely deep networks can be trained using standard SGD (and a reasonable initialization function) through the use of residual modules:
-
-
-Figure 4: (Left) The original residual module. (Right) The updated residual module using pre-activation.
-That said, keep in mind that the ResNet50 (as in 50 weight layers) implementation in the Keras core is based on the former 2015 paper.
-
-Even though ResNet is much deeper than VGG16 and VGG19, the model size is actually substantially smaller due to the usage of global average pooling rather than fully-connected layers — this reduces the model size down to 102MB for ResNet50.
+{{< figure src="/img/imagenet_inceptionresnetv2_schematic.png" title="Schematic of Inception-Resnet-V2" >}}
 
 ## Xception
 
@@ -39,4 +38,13 @@ Xception is an extension of the Inception architecture which replaces the standa
 
 The original publication, Xception: Deep Learning with Depthwise Separable Convolutions can be found here.
 
+{{< figure src="/img/imagenet_xception_flow.png" title="The Xception architecture." >}}
+
 Xception sports the smallest weight serialization at only 91MB.
+
+
+## References
+
+- [Rethinking the Inception Architecture for Computer Vision](https://arxiv.org/pdf/1512.00567v1.pdf)
+- [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](https://arxiv.org/abs/1602.07261)
+- [Xception: Deep Learning with Depthwise Separable Convolutions](https://arxiv.org/abs/1610.02357)

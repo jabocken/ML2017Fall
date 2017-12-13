@@ -4,6 +4,7 @@ title = "Image Classification for cdiscount.com"
 theme = "kube"
 paginate = 4
 publishDir = "../docs"
+staticDir = ["static"]
 [Params]
   RSSLink = "/index.xml"
   author = "Balaji Arun; Joshua Bockenek; Abhishek Chauhan; Jamal Ahmad Khan"
